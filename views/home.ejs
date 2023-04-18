@@ -3,7 +3,8 @@
 <p> <%= homeText %> </p>
 <% for( let index = 0; index < posts.length; index++ ) { %>
     <h1><%= posts[index]['title'] %></h1>
-    <p><%= posts[index]['body'].substring(0,100)+"..." %> <a href="/<%= posts[index]['title'] %>">Readmore</a></p>
+    
+    <p><%= posts[index]['body'].substring(0,200)+"..." %> <a href="/<%= posts[index]['title'] %>">Readmore</a></p>
 
 <% } %>
 <%- include('partials/footer'); -%>
